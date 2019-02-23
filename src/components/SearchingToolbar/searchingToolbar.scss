@@ -1,0 +1,60 @@
+@import "../../style/vars.scss";
+
+.searchingToolbar {
+  width: 918px;
+  display: flex;
+  border: 1px solid white;
+  z-index: 150;
+
+  input,
+  select,
+  button {
+    height: 57px;
+    border: none;
+    outline: none;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
+.searchingToolbar__textInput {
+  input {
+    width: 486px;
+  }
+}
+.searchingToolbar__categoriesInput {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 36px;
+    border-left: 1px solid white;
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+  select {
+    width: 110px;
+  }
+}
+.searchingToolbar__provinceInput {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 36px;
+    border-left: 1px solid white;
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+  select {
+    width: 142px;
+  }
+}
+.searchingToolbar__findButton {
+  button {
+    width: 180px;
+    border-left: 1px solid white;
+  }
+}
+// 486
+// 57

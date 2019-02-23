@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "./App.css";
+import React from "react";
 
-let x;
-console.log("   meeesys   ");
+import { Layout } from "./components/Layout";
 
-class App extends Component {
-  render() {
-    return <div className="App">Hello world</div>;
-  }
-}
+const app = () => {
+  return (
+    <div className="App">
+      <Layout />
+    </div>
+  );
+};
 
-export default App;
+export default app;

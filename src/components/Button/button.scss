@@ -1,0 +1,55 @@
+@import "../../style/vars.scss";
+
+.btn {
+  font-size: $font-size-normal;
+  border: none;
+  color: white;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
+
+  &--color-red {
+    background-color: rgba($color: #c34528, $alpha: 1);
+  }
+  &--size-sm {
+    padding: 4px;
+    height: 24px;
+  }
+  &--size-bg {
+    height: 35px;
+    padding: 5px;
+  }
+  p {
+    margin: 0 6px;
+    word-break: keep-all;
+  }
+}
+
+.btn__icon {
+  font-size: 23px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.arrow {
+  width: 17px;
+  font-size: 11px;
+  position: relative;
+  transition: all 1s;
+
+  i {
+    position: absolute;
+    top: -6px;
+    left: 8px;
+    transition: all 0.5s;
+  }
+}
+.btn:hover {
+  .arrow {
+    i {
+      position: absolute;
+      top: -6px;
+      left: -1px;
+    }
+  }
+}
