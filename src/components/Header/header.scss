@@ -1,15 +1,15 @@
 @import "../../style/vars.scss";
 
-.layout {
-  width: 100vw;
-}
-.layout__header {
+.header {
   background-image: url("../../img_elements/header_high.jpg");
   background-repeat: no-repeat;
-  background-position: 32%;
+  background-position: 42%;
   height: 490px;
-  width: 100vw;
+  width: 100%;
   min-width: 1420px;
+  max-width: 2190px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 .header__topMenu {
@@ -168,7 +168,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 290px;
+    margin-right: 230px;
+    padding-bottom: 110px;
   }
 }
 

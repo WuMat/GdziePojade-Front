@@ -1,0 +1,148 @@
+.footer {
+  background-color: rgba($color: #dc5e41, $alpha: 0.77);
+  height: 471px;
+  width: 100%;
+  min-width: 1420px;
+  max-width: 2190px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-image: url("../../img_elements/header_high.jpg");
+    background-repeat: no-repeat;
+    background-position: 42%;
+    opacity: 0.34;
+    height: 471px;
+  }
+}
+
+.footer__categories {
+  background-color: rgba($color: #fbece4, $alpha: 1);
+  z-index: 100;
+  position: absolute;
+  width: inherit;
+  height: 63px;
+  top: 7px;
+
+  &::before {
+    content: "";
+    background-color: rgba($color: #fbece4, $alpha: 1);
+    z-index: 100;
+
+    position: absolute;
+    width: inherit;
+    height: 1px;
+    top: -3px;
+  }
+
+  &::after {
+    content: "";
+    background-color: rgba($color: #fbece4, $alpha: 1);
+    z-index: 100;
+
+    position: absolute;
+    width: inherit;
+    height: 1px;
+    bottom: -3px;
+  }
+}
+.footer__wrapper {
+  height: inherit;
+  max-width: 1690px;
+  min-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.footer__listCategories {
+  max-width: 1690px;
+  min-width: 1420px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      list-style-type: none;
+      color: rgba($color: #852c17, $alpha: 1);
+      font-size: 18px;
+      position: relative;
+      display: block;
+      transition: all 0.5s;
+      z-index: 100;
+
+      &::after {
+        content: "\f105";
+        color: rgba($color: #be5743, $alpha: 1);
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: 20px;
+
+        position: absolute;
+        top: -1px;
+        right: -20px;
+        transition: all 0.5s;
+      }
+
+      &:hover::after {
+        top: -1px;
+        right: -30px;
+      }
+    }
+  }
+}
+.footer__info {
+  background-color: rgba($color: #fbece4, $alpha: 0.68);
+  position: absolute;
+  height: 85px;
+  bottom: 0px;
+  z-index: 100;
+  width: inherit;
+}
+
+.footer__logo {
+  width: 270px;
+  height: 100%;
+  background-image: url("../../img_elements/logo.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -15px;
+}
+
+.footer__contact {
+  position: absolute;
+  right: 0;
+  ul {
+    display: flex;
+
+    li {
+      list-style-type: none;
+      display: block;
+      position: relative;
+      margin: 0 16px;
+
+      &::after {
+        content: "•";
+        display: inline-block;
+        position: absolute;
+        right: -16px;
+
+        font-size: 23px;
+        top: -5px;
+        color: rgba($color: #c34528, $alpha: 1);
+      }
+    }
+  }
+}
+.footer__btn {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 100px;
+}
