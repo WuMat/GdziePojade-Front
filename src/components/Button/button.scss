@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   word-break: keep-all;
+  outline: none;
+  letter-spacing: 0.4px;
 
   &--color-red {
     background-color: rgba($color: #c34528, $alpha: 1);
@@ -45,6 +47,7 @@
   }
 }
 .btn:hover {
+  cursor: pointer;
   .arrow {
     i {
       position: absolute;

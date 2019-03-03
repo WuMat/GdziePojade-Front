@@ -5,13 +5,11 @@ import "./layout.scss";
 import { Header } from "./Header/Header";
 import { Footer } from "./Footer/Footer";
 
-export const Layout = () => {
+export const Layout = props => {
   return (
     <div className="layout">
       <Header />
-      <br />
-      <br />
-      <br />
+      {props.children}
       <Footer />
     </div>
   );

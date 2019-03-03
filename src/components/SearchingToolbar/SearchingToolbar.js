@@ -6,7 +6,7 @@ export const SearchingToolbar = props => {
   return (
     <div className="searchingToolbar">
       <div className="searchingToolbar__textInput">
-        <input type="text" value="jakis przykladowy value" />
+        <input type="text" placeholder="wyszukaj" />
       </div>
       <div className="searchingToolbar__categoriesInput">
         <select name="categories">

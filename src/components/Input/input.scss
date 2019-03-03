@@ -1,0 +1,45 @@
+.Input {
+  width: 100%;
+
+  &--width-wide {
+    width: 550px;
+  }
+
+  &--width-tight {
+    width: 450px;
+  }
+
+  input {
+    &:focus::placeholder {
+      color: white;
+    }
+    &::placeholder {
+      color: gray;
+      opacity: 0.3;
+    }
+  }
+}
+
+.Input__descriptionWrapper {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.Input__errorMessage {
+  color: red;
+  letter-spacing: 0.2px;
+}
+
+.Input__field {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border: 1px solid rgba($color: grey, $alpha: 0.7);
+  opacity: 1;
+  outline: none;
+
+  &--red {
+    border: 1px solid rgba($color: #c34528, $alpha: 0.7);
+  }
+}

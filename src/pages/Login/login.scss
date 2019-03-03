@@ -1,0 +1,46 @@
+.Login {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.RegisterLogin__Login {
+  height: 310px;
+  width: 100%;
+  margin-bottom: 80px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img_elements/zaloguj.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 40px;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .inputs__reminder {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+}
+.Login__inputs {
+  width: 280px;
+}
+.RegisterLogin__registerButton {
+  position: absolute;
+  top: 30px;
+  right: 300px;
+  font-size: 13px;
+  p {
+    margin-bottom: 5px;
+  }
+}
+.inputs__btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

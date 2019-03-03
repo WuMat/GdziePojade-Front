@@ -1,0 +1,17 @@
+.inputsWrapper {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba($color: #b76959, $alpha: 1);
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-weight: bold;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+}

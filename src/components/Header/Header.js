@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Button } from "../Button/Button";
 import { SearchingToolbar } from "../SearchingToolbar/SearchingToolbar";
@@ -10,16 +11,20 @@ export const Header = props => {
       <div className="header__topMenu">
         <div className="header__menuWrapper">
           <div className="header__logo">
-            <div className="logo" />
+            <Link to="/home">
+              <div className="logo" />
+            </Link>
           </div>
           <div className="header__button">
-            <Button
-              label="Zaproponuj nową lokalizację"
-              color="red"
-              icon="fas fa-map-marker-alt"
-              size="bg"
-              arrow={true}
-            />
+            <Link to="/addPlace">
+              <Button
+                label="Zaproponuj nową lokalizację"
+                color="red"
+                icon="fas fa-map-marker-alt"
+                size="bg"
+                arrow={true}
+              />
+            </Link>
           </div>
           <div className="header__menu">
             <ul>
@@ -32,7 +37,9 @@ export const Header = props => {
           </div>
           <div className="header__userPanel">
             <div className="header__statsUser">Do odwiedzenia (23)</div>
-            <Button label="Moje konto" color="red" size="sm" />
+            <Link to="/login">
+              <Button label="Twoje Konto" color="red" size="sm" />
+            </Link>
           </div>
         </div>
       </div>
