@@ -1,0 +1,25 @@
+.InfoErroSuccesIcon {
+  width: 100%;
+  margin-top: 30px;
+  flex-direction: column;
+
+  &--color-error {
+    color: #b76959;
+  }
+  &--color-succes {
+    color: #5aa859;
+  }
+
+  .InfoErroSuccesIcon__description {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}
+.InfoErroSuccesIcon__icon {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+}
