@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "ajv": "^6.8.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "check-prop-types": "^1.1.2",
     "classnames": "^2.2.6",
     "email-validator": "^2.0.4",
