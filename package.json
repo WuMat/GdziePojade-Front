@@ -19,7 +19,7 @@
     "enzyme-adapter-react-16": "^1.9.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.2",
