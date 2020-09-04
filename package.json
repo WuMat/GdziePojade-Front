@@ -20,7 +20,7 @@
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
     "lodash": "^4.17.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
